@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./pages/Dashboard";
-import Board from "./pages/Board";
+import BoardPage from "./pages/BoardPage";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to={"/dashboard"} />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/board/:id" element={<Board />} />
+          <Route path="/board/:id" element={<BoardPage />} />
         </Routes>
       </BrowserRouter>
     </div>
